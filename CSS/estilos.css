@@ -1,0 +1,84 @@
+/* Configuración global y fuente de Google Fonts */
+html {
+    font-family: 'Montserrat', sans-serif; /* [4] */
+    background-color: #f4f4f4;
+}
+
+body {
+    margin: 0; /* Reset de márgenes [6] */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #000066; /* Color gris azulado [7] */
+    color: white;
+    padding: 3rem 2rem; /* Espaciado interno relativo [7] */
+    text-align: center; /* Centrar título [8] */
+}
+
+header h1 {
+    font-size: 4rem; /* Tamaño de fuente grande [8] */
+    margin: 0;
+}
+
+/* Contenedor principal para centrar los artículos */
+section {
+    width: 600px; /* Coincide con el ancho de las imágenes [9] */
+    margin: 0 auto; /* Magia para centrar el bloque [9, 10] */
+}
+
+/* Estilos de las tarjetas de los artículos (posts) */
+article {
+    background-color: #ffffff;
+    margin: 1rem 0; /* Separación entre tarjetas [11] */
+    border-radius: 0.5rem; /* Bordes redondeados [11] */
+    padding: 0.25rem 0; /* Espaciado interno vertical [11] */
+    cursor: pointer; /* Cambia el cursor a la mano [5, 12] */
+    transition: box-shadow 0.3s ease; /* Animación suave para la sombra [5] */
+    text-align: justify;
+}
+
+/* Efecto al pasar el mouse sobre el artículo */
+article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3); /* Sombra difuminada [12] */
+}
+
+/* Estilo para imágenes dentro de los artículos */
+article img {
+    display: block; /* Evita espacios extra debajo de la imagen */
+    width: 100%; /* Ajusta al ancho del artículo [9] */
+}
+
+/* Estilos de texto dentro de los artículos */
+article h2 {
+    margin: 1rem; /* Separa el texto de los bordes [10] */
+    text-align: center;
+    color: #000066;
+}
+
+/* Estilos de texto dentro de los artículos */
+article p {
+    margin: 1rem; /* Separa el texto de los bordes [10] */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #222; /* Fondo oscuro [13] */
+    color: white;
+    padding: 0.5rem; /* Espaciado amplio [13] */
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado [14] */
+    transition: color 0.3s ease; /* Transición suave para el color [15] */
+}
+
+footer a:hover {
+    color: cornflowerblue; /* Color azul suave al pasar el mouse [14] */
+}
+
+td {
+    width: 1500px;
+}
