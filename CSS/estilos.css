@@ -23,7 +23,7 @@ header h1 {
 
 /* Contenedor principal para centrar los artículos */
 section {
-    width: 600px; /* Coincide con el ancho de las imágenes [9] */
+    max-width: 800px;  /* Coincide con el ancho de las imágenes [9] */
     margin: 0 auto; /* Magia para centrar el bloque [9, 10] */
 }
 
@@ -81,4 +81,106 @@ footer a:hover {
 
 td {
     width: 1500px;
+}
+/* Seleccionamos la lista dentro del menú */
+.mi-menu ul {
+  display: flex;            /* Alinea los elementos en fila */
+  list-style-type: none;    /* Quita los puntos negros de la lista */
+  margin: 0;                /* Elimina el espacio externo por defecto */
+  gap: 20px;                /* Aplicamos el espacio de 10px entre elementos */
+  background-color: #00f5f8; /* Un color gris azulado claro para el fondo */
+  justify-content: center;   /* Centra horizontalmente la lista interna */
+  width: 100%;               /* Asegura que ocupe todo el ancho de la línea */
+  padding: 12px 16px;         /* Espacio interno para darle tamaño al botón */
+  border-radius: 4px;        /* Bordes sutilmente redondeados */
+  transition: background-color 0.3s; /* Hace que el cambio de color sea suave */
+}
+
+.mi-menu ul li a {
+  text-decoration: none;    /* Quita el subrayado por defecto */
+  color: #004499;           /* Aplica el color azul */
+  font-family: sans-serif;  /* Una tipografía limpia y moderna */
+  padding: 8px 16px;         /* Espacio interno para darle tamaño al botón */
+}
+
+/* Efecto al pasar el cursor por encima (hover) */
+.mi-menu ul li a:hover {
+  background-color: #0066cc; /* El fondo cambia al azul original */
+  color: #ffffff;            /* El texto cambia a blanco para contrastar */
+}
+.contenedor-video {
+  position: relative;
+  max-width: 100%;            /* Ocupa el ancho total del div donde esté metido */
+  padding-top: 56.25%;    /* Esto mantiene la proporción de aspecto 16:9 (pantalla ancha) */
+  height: 0;
+  overflow: hidden;
+}
+
+.contenedor-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+  border: 0;              /* Quita el borde feo por defecto */
+}
+/* Centra el formulario en la página y le da un ancho máximo */
+.contenedor-formulario {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Organiza los elementos en forma de columna vertical */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilo para las etiquetas de texto */
+.formulario-contacto label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Estilo para los campos de entrada (input) y el área de texto (textarea) */
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Cambia el borde cuando el usuario hace clic en un campo */
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #0066cc; /* Azul que combina con tu menú */
+}
+
+/* Estilo para el botón de enviar */
+.formulario-contacto button {
+  background-color: #0066cc;
+  color: #ffffff;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efecto hover para el botón */
+.formulario-contacto button:hover {
+  background-color: #004499; /* Azul más oscuro al pasar el cursor */
 }
